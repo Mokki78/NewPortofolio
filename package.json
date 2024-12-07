@@ -17,5 +17,8 @@
     "website"
   ],
   "author": "Monika Saele <mohki78@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
 }
