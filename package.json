@@ -1,0 +1,21 @@
+{
+  "name": "newportofolio",
+  "version": "1.0.0",
+  "description": "portofolio",
+  "main": "src.index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "@"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "portofolio",
+    "website"
+  ],
+  "author": "Monika Saele <mohki78@gmail.com>",
+  "license": "ISC"
+}
