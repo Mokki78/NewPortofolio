@@ -12,7 +12,7 @@ section {
 }
 
 .mainNav {
-    border-bottom: 1px solid #867871; 
+  border-bottom: 1px solid #867871;
 }
 
 .mainList {
@@ -29,19 +29,18 @@ section {
   top: 50px;
   right: 20px;
   padding-right: 50px;
-
 }
 
 .logo {
-    height:100px;
-    padding-left: 80px;
+  height: 100px;
+  padding-left: 80px;
 }
 
 .hero-image {
-    max-width: 80%;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 a {
@@ -53,6 +52,36 @@ a {
   font-size: 20px;
 }
 
-#section1 {
-    border-bottom: 1px solid #867871;
+.header-container {
+    display: flex;
 }
+
+h1 {
+    color: #867871;
+    font-size: 60px;
+    font-weight:700;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+#section1 {
+  border-bottom: 1px solid #867871;
+}
+
+
+#section2 {
+    border-bottom: 1px solid #867871;
+  }
+
+
+#section3 {
+    border-bottom: 1px solid #867871;
+  }
+
+
+#section4 {
+    border-bottom: 1px solid #867871;
+  }
+  
+  
+  
