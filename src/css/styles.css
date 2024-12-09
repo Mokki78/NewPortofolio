@@ -2,5 +2,57 @@ body {
   margin: 0;
   background-color: #100f0f;
   font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+  height: auto;
 }
 
+section {
+  min-height: 100%;
+  border-bottom: 1px solid #867871;
+}
+
+.mainNav {
+    border-bottom: 1px solid #867871; 
+}
+
+.mainList {
+  color: white;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 40px;
+  font-family: "poppins", light, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  padding-right: 50px;
+
+}
+
+.logo {
+    height:100px;
+    padding-left: 80px;
+}
+
+.hero-image {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#section1 {
+    border-bottom: 1px solid #867871;
+}
