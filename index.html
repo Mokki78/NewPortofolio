@@ -180,6 +180,23 @@
         <div class="header-container">
           <h1>CONTACT</h1>
         </div>
+        <div>
+          <form class="form-container" action="" method="POST">
+            <input type="hidden" name="contact-number">
+            <label class="label">Name</label>
+            <span id="name-error"></span>
+            <input type="text" id="contact-name" aria-label="name" required minlength="5" onkeyup="validateName()" >
+            <label class="label">Email</label>
+            <span id="email-error"></span>
+            <input type="email" id="contact-email" aria-label="email" required onkeyup="validateEmail()">
+            <label>Your message</label>
+            <span id="message-error"></span>
+            <textarea name="message" id="contact-message" class="label" aria-label="message" onkeyup="validateMessage()"></textarea>
+            <button>SEND MESSAGE</button>
+            <span id="submit-error"></span>
+          </form>
+
+        </div>
       </section>
     </main>
     <footer></footer>
