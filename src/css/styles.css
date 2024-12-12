@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-color: #100f0f;
   font-family: "poppins", sans-serif;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
   height: auto;
 }
 
@@ -31,6 +31,30 @@ section {
   padding-right: 30px;
   background-color: #100f0f;
   padding-top: 10px;
+}
+
+#hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #867871;
+}
+
+#hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: right;
+  transition: transform 0.25s ease-out;
+}
+
+#hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .logo {
@@ -223,25 +247,21 @@ h6 {
   display: flex;
   position: relative;
   padding-left: 10%;
-  
 }
 
 .contact-info-container {
   border: 1px solid white;
   padding: 50px;
-
 }
 
 .contact-info-box1 {
   font-weight: bold;
   font-size: 16px;
-
 }
 
 .contact-info-box2 {
   padding-top: 20px;
-  gap:20px;
-  
+  gap: 20px;
 }
 
 .some {
@@ -250,40 +270,41 @@ h6 {
   color: #867871;
 }
 
-#some-icon1, #some-icon2, #some-icon3 {
+#some-icon1,
+#some-icon2,
+#some-icon3 {
   padding: 10px;
   color: #867871;
 }
 
-#some-icon1:hover, #some-icon2:hover, #some-icon3:hover {
+#some-icon1:hover,
+#some-icon2:hover,
+#some-icon3:hover {
   padding: 10px;
   color: white;
 }
 
-
-
 .submit-button {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   padding: 10px 30px;
   border: 1px solid white;
-  background-color:#867871;
+  background-color: #867871;
   color: white;
   cursor: pointer;
   margin-top: 20px;
+}
 
-  }
+.submit-button:hover {
+  background-color: #100f0f;
+  transform-origin: right;
+  transition: transform 0.25s ease-out;
+}
 
-  .submit-button:hover {
-    background-color: #100f0f;
-
-  }
-
-  .copyright {
-    display: flex;
-    margin: 0 auto;
-  }
-
+.copyright {
+  display: flex;
+  margin: 0 auto;
+}
 
 #section1 {
   border-bottom: 1px solid #867871;
