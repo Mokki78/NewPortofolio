@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-color: #100f0f;
   font-family: "poppins", sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
   height: auto;
 }
 
@@ -65,7 +65,6 @@ a {
 
 .header-container {
   display: flex;
-  
 }
 
 h1 {
@@ -99,6 +98,11 @@ h3 {
   padding-bottom: 100px;
 }
 
+h6 {
+  color: white;
+  font-size: 25px;
+}
+
 .icon-container {
   display: flex;
   justify-content: center;
@@ -112,10 +116,9 @@ h3 {
   box-sizing: border-box;
   position: absolute;
   left: 50%;
-  
+
   margin: 0 auto;
   transform: rotate(-225deg);
-  
 }
 
 .icon-arrow::before {
@@ -155,10 +158,6 @@ h3 {
   transform: scale(0.8);
 }
 
-.open-close {
-
-}
-
 .work1 {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -169,7 +168,6 @@ h3 {
   display: flex;
   padding: 100px;
   flex-direction: row;
- 
 }
 
 .about-img {
@@ -183,6 +181,109 @@ h3 {
   padding-left: 700px;
   padding-right: 200px;
 }
+
+#form-container {
+  box-sizing: border-box;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-bottom: 100px;
+  border: 1px solid white;
+}
+
+#form-container i {
+  color: green;
+}
+
+#contact-name,
+#contact-email {
+  height: 30px;
+}
+
+#contact-message {
+  height: 100px;
+}
+
+.label {
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#email-error,
+#name-error,
+#message-error {
+  color: red;
+}
+
+.form-container i {
+  color: green;
+  display: flex;
+  position: relative;
+  padding-left: 10%;
+  
+}
+
+.contact-info-container {
+  border: 1px solid white;
+  padding: 50px;
+
+}
+
+.contact-info-box1 {
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+.contact-info-box2 {
+  padding-top: 20px;
+  gap:20px;
+  
+}
+
+.some {
+  gap: 10px;
+  margin: 0 auto;
+  color: #867871;
+}
+
+#some-icon1, #some-icon2, #some-icon3 {
+  padding: 10px;
+  color: #867871;
+}
+
+#some-icon1:hover, #some-icon2:hover, #some-icon3:hover {
+  padding: 10px;
+  color: white;
+}
+
+
+
+.submit-button {
+  display: flex;
+  justify-content:flex-start;
+  padding: 10px 30px;
+  border: 1px solid white;
+  background-color:#867871;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+
+  }
+
+  .submit-button:hover {
+    background-color: #100f0f;
+
+  }
+
+  .copyright {
+    display: flex;
+    margin: 0 auto;
+  }
+
 
 #section1 {
   border-bottom: 1px solid #867871;
