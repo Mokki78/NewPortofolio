@@ -89,6 +89,7 @@ a {
 
 .header-container {
   display: flex;
+
 }
 
 h1 {
@@ -186,6 +187,10 @@ h6 {
   padding-top: 100px;
   padding-bottom: 100px;
   width: 100%;
+}
+
+.content-container {
+  border: 1px solid  #867871;
 }
 
 .about-container {
@@ -306,6 +311,11 @@ h6 {
   margin: 0 auto;
 }
 
+#content-container {
+
+  border: 1px solid #867871;
+}
+
 #section1 {
   border-bottom: 1px solid #867871;
 }
@@ -321,4 +331,24 @@ h6 {
 
 #section4 {
   border-bottom: 1px solid #867871;
+}
+
+#section5 {
+  border-bottom: 1px solid #867871;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-text {
+   padding-left: 200px;
+   padding-right: 100px;
+  }
+
+}
+
+@media only screen and (min-width: 800px) {
+  .self-portrait img{
+   display: none;
+   
+  }
+
 }
