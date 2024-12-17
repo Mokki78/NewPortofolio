@@ -425,7 +425,11 @@ h6 {
 
 .submit-button {
   display: flex;
-  justify-content: flex-start;
+  position: relative;
+  bottom: 10%;
+  left: 64%;
+
+
   padding: 10px 30px;
   border: 1px solid white;
   background-color: #867871;
