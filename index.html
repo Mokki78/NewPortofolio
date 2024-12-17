@@ -1,246 +1,261 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <link href="/src/css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.typekit.net/upw5dbm.css" />
-    <script src="https://kit.fontawesome.com/72d60656d6.js" crossorigin="anonymous"></script>
- 
-    <script
-      src="https://kit.fontawesome.com/e82fe9e5d2.js"
-      crossorigin="anonymous" ></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-      <script type="text/javascript">
-          (function() {
-            
-              emailjs.init({
-                publicKey: "KV0yiy47LQLPpjxFF",
-              });
-          })();
-      </script>
-      <script type="text/javascript">
-          window.onload = function() {
-              document.getElementById('form-container').addEventListener('submit', function(event) {
-                  event.preventDefault();
-               
-                  emailjs.sendForm("service_nzd8rtm", "contact_form",this)
-                      .then(() => {
-                          console.log('SUCCESS!');
-                      }, (error) => {
-                          console.log('FAILED...', error);
-                      });
-              });
-          }
-      
-    </script>
-    <title>
-      Monika Saele`s portfolio page. Webdesigner, that codes and photographs.
-    </title>
-  </head>
 
-  <body>
-    <header>
-      <section id="section1">
-      
-      
-        <nav class="mainNav">
-          <div>
-            <a href="#section1">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="/src/css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/upw5dbm.css" />
+  <script src="https://kit.fontawesome.com/72d60656d6.js" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/e82fe9e5d2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+
+      emailjs.init({
+        publicKey: "KV0yiy47LQLPpjxFF",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('form-container').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_nzd8rtm", "contact_form", this)
+          .then(() => {
+            console.log('SUCCESS!');
+          }, (error) => {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+
+  </script>
+  <title>
+    Monika Saele`s portfolio page. Webdesigner, that codes and photographs.
+  </title>
+</head>
+
+<body>
+  <header>
+    <section id="section1">
+       <nav class="mainNav">
+        <div>
+          <a href="#section1">
             <img src="/assets/logo.png" class="logo" />
           </a>
-          </div>
-       
-          
-      <ul class="mainList">
-            <li class="list-item1" ><a href="#section1" id="hover-underline-animation">HOME</a></li>
-            <li class="list-item2" ><a href="#section2" id="hover-underline-animation">MY WORK</a></li>
-            <li class="list-item3" ><a href="#section3" id="hover-underline-animation">ABOUT</a></li>
-            <li class="list-item4" ><a href="#section4" id="hover-underline-animation">CONTACT</a></li>
-          </ul>
-        </nav>
-        <div id="nav-mobile" class="mobile-overlay">
-          <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a id="one" href="#section1"  class="hover-underline-animation" onclick="closeNav()">HOME</a>
-            <a id="two" href="#section2" target="_black" class="hover-underline-animation" onclick="closeNav()">MY WORK</a>
-            <a id="three" href="#section3" target="_black" class="hover-underline-animation" onclick="closeNav()">ABOUT</a>
-            <a id="four" href="#section4" target="_black" class="hover-underline-animation"  onclick="closeNav()">CONTACT</a>
-           </div>
-         </div>
-         <div class="hamburger-icon">
-          <span onclick="openNav()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        </div>
+
+
+        <ul class="mainList">
+          <li class="list-item1"><a href="#section1" id="hover-underline-animation">HOME</a></li>
+          <li class="list-item2"><a href="#section2" id="hover-underline-animation">MY WORK</a></li>
+          <li class="list-item3"><a href="#section3" id="hover-underline-animation">ABOUT</a></li>
+          <li class="list-item4"><a href="#section4" id="hover-underline-animation">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div id="nav-mobile" class="mobile-overlay">
+        <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a id="one" href="#section1" class="hover-underline-animation" onclick="closeNav()">HOME</a>
+          <a id="two" href="#section2" target="_black" class="hover-underline-animation" onclick="closeNav()">MY
+            WORK</a>
+          <a id="three" href="#section3" target="_black" class="hover-underline-animation"
+            onclick="closeNav()">ABOUT</a>
+          <a id="four" href="#section4" target="_black" class="hover-underline-animation"
+            onclick="closeNav()">CONTACT</a>
+        </div>
+      </div>
+      <div class="hamburger-icon">
+        <span onclick="openNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </span>
       </div>
-       
-         <img src="/assets/hero_image2.jpg" class="hero-image" />
-         <div class="arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-       
-        </div>
-     
-      </section>
-    </header>
-    <main>
-      <section id="section2">
-        <div class="header-container">
-          <h1>MY WORK</h1>
-        </div>
-        <div>
-          <h3>This is a collection of my best work so far from my time studying UI Design and front-end development at Noroff
-            School of technology & Digital media.</h3>
-        </div>
-       
-        <div>
-         <h2>PHOTOGRAPHER MENDEN</h2>
-        </div>
-        <div>
-          <p>This is my exam project assignment from UI Design at Noroff School of Technology & Digital media. The assignment was to make a visual profile, or redesing the current, with logo, colors, fonts and icons.
-            After that we were to make a brand style guide, and design a website and a brand style system to go with it.</p>
-            <br>
-            <p>We had about 7 weeks to finish the project,  and I worked alone, and got an A.</p>
-        </div>
-   
-        <div>
-          <a class="icon-arrow" type="button" data-target="1">
-          <span class="left-bar"></span>
-          <span class="right-bar"></span>
-          </a>
-          </div>
-          <div class="open-close" data-id="1" style="display: none">
-            <img src="/assets/menden.jpg" class="work1">
-          </div>
-        
-     
-       
-            <h2>SOLAR SMART</h2>
-          </div>
+
+      <img src="/assets/hero_image2.jpg" class="hero-image" />
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      </div>
+
+    </section>
+  </header>
+  <main>
+    <section id="section2">
+      <div class="header-container">
+        <h1>MY WORK</h1>
+      </div>
+
+      <div>
+        <h3>This is a collection of my best work so far from my time studying UI Design and front-end development at
+          Noroff
+          School of technology & Digital media.</h3>
+      </div>
+
+      <div>
+        <h2>PHOTOGRAPHER MENDEN</h2>
+
+        <div class="text-box">
+          <p>This is my exam project assignment from UI Design at Noroff School of Technology & Digital media. The
+            assignment was to make a visual profile, or redesing the current, with logo, colors, fonts and icons.
+            After that we were to make a brand style guide, and design a website and a brand style system to go with it.
+          </p>
+          <br>
+          <p>We had about 7 weeks to finish the project, and I worked alone, and got an A.</p>
+
           <div>
-            <p>This was my assignment for the semester project at Noroff school of Technology n& Digital media. The assignment was to amke the visal profile for a company selling solar panels to both private and corporate. This included a logo, color palette, fonts, icons, elevation etc. After that we were tasked to make a website, a brand style guide and a brand style system, and document all of our choices.</p>
-              <br>
-              <p>We had 4 weeks to finish, and I worked alone. Got an A for my work.</p>
-          </div>
-          <div>
-            <a class="icon-arrow" type="button" data-target="2">
-            <span class="left-bar"></span>
-            <span class="right-bar"></span>
-            </a>
-            </div>
-            <div class="open-close" data-id="2" style="display: none">
-              <img src="/assets/solar-smart-preview.jpg" class="work1">
-            </div>
-            <div>
-              
-             
-              <h2>NOR MØBLER</h2>
-            </div>
-            <div>
-              <p>This was a weekly assigment and the task was to design a landing page and a product detail page for a fictiual company named Nor Møbler. The visual profile was already set with a log, colors and fonts for us to use, and we were to use this and the company guidelines to make our design.</p>
-              </div>
-            <div>
-              <a class="icon-arrow" type="button" data-target="3">
+            <a class="icon-arrow" type="button" data-target="1">
               <span class="left-bar"></span>
               <span class="right-bar"></span>
-              </a>
-              </div>
-              <div class="open-close" data-id="3" style="display: none">
-                <img src="/assets/Product page.jpg" class="work1">
-                <img src="/assets/Landing page.jpg" class="work1">
-              </div>
-         </section>
-      <section id="section3">
-        <div class="header-container">
-          <h1>ABOUT</h1>
-        </div>
-          <div class="about-container">
-              <div>
-              <img src="/assets/self-portrait.jpg" class="about-img">
-              <img src="/assets/self-portrait.jpg" class="about-img">
-              <img src="/assets/self-portrait.jpg" class="about-img">
-            </div>
-            <div>
-              <p id="about-text">I am a web designer that codes and takes pictures, based in Larvik, Norway. 
+            </a>
 
-                I love colors, typography, photography and good design
-                
-                .<br>I also think that UX, and a good user experience is crucial when designing. 
-                
-                 If it does not work for the people it is intended for, it is not good design.
-                 <br>
-                
-                I have spent the last years of my life dedicated to learning websites. I have learned how to design them, UX, best practices, how to build them in code and how to make them visible online, which also is a crucial part.
-                
-                After finishing my last year at Noroff, I am now looking forward to my next project.
-                <br>
-                
-                Maybe that will be with you?</p>
-            </div>
           </div>
-      </section>
-      <section id="section4">
-        <div class="header-container">
-          <h1>CONTACT</h1>
         </div>
-        <div class="contact-info-container">
-          <div class="contact-info-box1"> <p>If you have a project or an open position
-            perfect for me I look forward to hearing 
-            from you!
-            </p></div>
-         
-           <div class="contact-info-box2">
-            <p>Call me: +47 90 75 75 19 </p>
-            <br>
-              <p>Email me: mohki78@gmail.com</p>
-              <div class="some">
-                <a href="https://www.linkedin.com/in/monika-sæle-2a80918a/" ><i class="fa-brands fa-linkedin  fa-xl" id="some-icon1"></i></a>
-                <a href="https://www.instagram.com/fotografmonikasaele/" ><i class="fa-brands fa-instagram fa-xl" id="some-icon2"></i></a>
-               <a href="https://www.facebook.com/fotografmonikasaele/" ><i class="fa-brands fa-facebook fa-xl" id="some-icon3"></i></a>
-                
-              </div>
-            </div>
+        <div class="open-close" data-id="1" style="display: none">
+          <img src="/assets/menden.jpg" class="work1">
         </div>
-       
+      </div>
+      <div>
+        <h2>SOLAR SMART</h2>
+   
+      <div class="text-box">
+        <p>This was my assignment for the semester project at Noroff school of Technology n& Digital media. The
+          assignment was to amke the visal profile for a company selling solar panels to both private and corporate.
+          This included a logo, color palette, fonts, icons, elevation etc. After that we were tasked to make a website,
+          a brand style guide and a brand style system, and document all of our choices.</p>
+        <br>
+        <p>We had 4 weeks to finish, and I worked alone. Got an A for my work.</p>
+     
+      <div>
+        <a class="icon-arrow" type="button" data-target="2">
+          <span class="left-bar"></span>
+          <span class="right-bar"></span>
+        </a>
+      </div>
+    </div>
+      <div class="open-close" data-id="2" style="display: none">
+        <img src="/assets/solar-smart-preview.jpg" class="work1">
+      </div>
+    </div>
+     <div>
+      <h2>NOR MØBLER</h2>
+   
+      <div  class="text-box">
+        <p>This was a weekly assigment and the task was to design a landing page and a product detail page for a
+          fictiual company named Nor Møbler. The visual profile was already set with a log, colors and fonts for us to
+          use, and we were to use this and the company guidelines to make our design.</p>
+    
+      <div>
+        <a class="icon-arrow" type="button" data-target="3">
+          <span class="left-bar"></span>
+          <span class="right-bar"></span>
+        </a>
+      </div>
+      <div class="open-close" data-id="3" style="display: none">
+        <img src="/assets/Product page.jpg" class="work1">
+        <img src="/assets/Landing page.jpg" class="work1">
+      </div>
+    </div>
+  </div>
+    </section>
+    <section id="section3">
+      <div class="header-container">
+        <h1>ABOUT</h1>
+      </div>
+      <div class="about-container">
         <div>
-       
-         <form id="form-container" action="" method="POST">
+          <img src="/assets/self-portrait.jpg" class="about-img">
+          <img src="/assets/self-portrait.jpg" class="about-img">
+          <img src="/assets/self-portrait.jpg" class="about-img">
+        </div>
+        <div id="about-text">
+          <p>I am a web designer that codes and takes pictures, based in Larvik, Norway.
+
+            I love colors, typography, photography and good design</p>
+          <br>
+          <p> I also think that UX, and a good user experience is crucial when designing.
+
+            If it does not work for the people it is intended for, it is not good design.</p>
+          <br>
+
+          <p> I have spent the last years of my life dedicated to learning websites. I have learned how to design them,
+            UX, best practices, how to build them in code and how to make them visible online, which also is a crucial
+            part.
+          </p>
+          <p>Maybe that will be with you?</p>
+
+        </div>
+      </div>
+    </section>
+    <section id="section4">
+      <div class="header-container">
+        <h1>CONTACT</h1>
+      </div>
+      <div class="contact-info-container">
+        <div class="contact-info-box1">
+          <p>If you have a project or an open position
+            perfect for me I look forward to hearing
+            from you!
+          </p>
+        </div>
+
+        <div class="contact-info-box2">
+          <p>Call me: +47 90 75 75 19 </p>
+          <br>
+          <p>Email me: mohki78@gmail.com</p>
+          <div class="some">
+            <a href="https://www.linkedin.com/in/monika-sæle-2a80918a/"><i class="fa-brands fa-linkedin  fa-xl"
+                id="some-icon1"></i></a>
+            <a href="https://www.instagram.com/fotografmonikasaele/"><i class="fa-brands fa-instagram fa-xl"
+                id="some-icon2"></i></a>
+            <a href="https://www.facebook.com/fotografmonikasaele/"><i class="fa-brands fa-facebook fa-xl"
+                id="some-icon3"></i></a>
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+
+        <form id="form-container" action="" method="POST">
           <h6 class="title">Get in touch!</h6>
-           <label for="name" class="label">Name</label>
-            <span id="name-error"></span>
-            <input type="text" id="contact-name" aria-label="name" required minlength="5" onkeyup="validateName()" >
-            <label for="email" class="label">Email</label>
-            <span id="email-error"></span>
-            <input type="email" id="contact-email" aria-label="email" name="email" required onkeyup="validateEmail()">
-            <label for="message" class="label">Your message</label>
-            <span id="message-error"></span>
-            <textarea name="message" id="contact-message" aria-label="message" onkeyup="validateMessage()" ></textarea>
-            <div>
-              <button type="submit" class="submit-button">SUBMIT</button>
+          <label for="name" class="label">Name</label>
+          <span id="name-error"></span>
+          <input type="text" id="contact-name" aria-label="name" required minlength="5" onkeyup="validateName()">
+          <label for="email" class="label">Email</label>
+          <span id="email-error"></span>
+          <input type="email" id="contact-email" aria-label="email" name="email" required onkeyup="validateEmail()">
+          <label for="message" class="label">Your message</label>
+          <span id="message-error"></span>
+          <textarea name="message" id="contact-message" aria-label="message" onkeyup="validateMessage()"></textarea>
+          <div>
+            <button type="submit" class="submit-button">SUBMIT</button>
             <span id="submit-error"></span>
-            </div>
-          </form>
-        
-        
-        </div>
-        <div class="arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-         </section>
-    </main>
-    <footer>
-      <div class="copyright"><p>Copyright© 2024 Monika Saele</p></div>
-    </footer>
-    <script src="/src/js/index.js"></script>
-    <script src="/src/js/hideShow.js"></script>
-    <script src="/src/js/hamburger-menu.js"></script>
-  </body>
+          </div>
+        </form>
+
+
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <div class="copyright">
+      <p>Copyright© 2024 Monika Saele</p>
+    </div>
+  </footer>
+  <script src="/src/js/index.js"></script>
+  <script src="/src/js/hideShow.js"></script>
+  <script src="/src/js/hamburger-menu.js"></script>
+</body>
+
 </html>
