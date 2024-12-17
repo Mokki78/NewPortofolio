@@ -88,6 +88,12 @@ section {
   position: fixed;
   top: 30px;
   right: 20px;
+  padding: 10px;
+}
+
+.hamburger-icon span {
+  display: inline-block;
+  padding: 10px;
 }
 
 .bar1,
@@ -97,7 +103,6 @@ section {
   width: 25px;
   min-height: 3px;
   margin: 5px 0;
-
 }
 
 .close {
@@ -146,13 +151,17 @@ section {
 
 .overlay-content a {
   color: white;
-  
   text-decoration: none;
 }
 
+.text-box {
+  padding-bottom: 100px;
+  border-bottom: 1px solid  #867871;;
+}
+
 .arrow {
-  position: relative;
-  top: 40%;
+  position: absolute;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform: rotate(0deg);
@@ -164,16 +173,14 @@ section {
   display: block;
   width: 1.5vw;
   height: 1.5vw;
-  border-bottom: 5px solid white;
-  border-right: 5px solid white;
+  border-bottom: 5px solid #867871;
+  border-right: 5px solid #867871;
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;
+  
 }
 
-.arroe span:nth-child(2) {
-  animation-delay: -0.4s;
-}
 
 @keyframes animate {
   0% {
@@ -190,6 +197,10 @@ section {
   }
 }
 
+.border {
+  border-bottom: 1px solid  #867871;
+
+}
 
 .logo {
   height: 100px;
@@ -266,7 +277,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
+  background-color: aqua;
 }
 
 .icon-arrow {
@@ -275,8 +286,8 @@ h6 {
   box-sizing: border-box;
   position: absolute;
   left: 50%;
-
   margin: 0 auto;
+  margin-bottom: 200px;
   transform: rotate(-225deg);
 }
 
@@ -323,14 +334,8 @@ h6 {
   width: 100%;
 }
 
-.content-container {
-  border: 1px solid  #867871;
-}
-
 .about-container {
   display: flex;
-  padding: 100px;
-  flex-direction: row;
 }
 
 .about-img {
@@ -340,9 +345,7 @@ h6 {
 
 #about-text {
   color: white;
-  font-weight: 200;
-  padding-left: 700px;
-  padding-right: 200px;
+  font-weight: 200; 
 }
 
 #form-container {
@@ -428,8 +431,6 @@ h6 {
   position: relative;
   bottom: 10%;
   left: 64%;
-
-
   padding: 10px 30px;
   border: 1px solid white;
   background-color: #867871;
@@ -449,9 +450,8 @@ h6 {
   margin: 0 auto;
 }
 
-#content-container {
-
-  border: 1px solid #867871;
+.content-container {
+   border: 1px solid #867871;
 }
 
 
