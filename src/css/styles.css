@@ -336,16 +336,21 @@ h6 {
 
 .about-container {
   display: flex;
+ 
 }
 
 .about-img {
   max-height: 200px;
   border: 1px solid white;
+  margin-left: 300px;
+  
 }
 
 #about-text {
   color: white;
   font-weight: 200; 
+ 
+  padding-top: 100px;
 }
 
 #form-container {
