@@ -563,3 +563,34 @@ background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9
    display: none;
   }
 }
+
+
+@media only screen and (min-width: 800px) {
+  .hamburger-icon{
+   display: none;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+  .hamburger-icon{
+   
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .logo{
+   height: 60px;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .mainList{
+   display: none;
+  }
+}
+
