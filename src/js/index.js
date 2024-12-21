@@ -62,11 +62,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     emailjs.send("service_nzd8rtm", "contact_form", templateParams).then(
       function (response) {
-        submitError.style.display = "block";
-        submitError.style.color = "green";
+       submitError.style.color = "green";
         submitError.innerHTML = "Message sent successfully!";
+        document.getElementById("contact-name").value = "";
+        document.getElementById("contact-email").value = "";
+        document.getElementById("contact-message").value = "";
 
-        console.log("SUCCESS", response.status, response.text);
+        submitError.style.display ="The message was sent";
+
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+
+;       console.log("SUCCESS", response.status, response.text);
         
       },
       function (error) {

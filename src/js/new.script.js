@@ -58,6 +58,7 @@ function validateForm(event) {
       setTimeout(function () {
           submitError.style.display = "none";
       }, 3000);
+      window.location.reload();
     } else {
 
         event.target.submit();
