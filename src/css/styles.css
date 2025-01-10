@@ -357,6 +357,7 @@ h6 {
 
 .about-container {
   display: flex;
+  flex-direction: column ;
   align-items: center;
   justify-content:center;
   width: 100%;
@@ -366,7 +367,6 @@ h6 {
 .image-container {
   display: flex;
   gap: 10px;
-  flex: 1;
   justify-content: center;
   max-width: 100%;
   padding-left: 200px;
@@ -375,10 +375,11 @@ h6 {
 
 .about-img {
   border: 1px solid white; 
+
 }
 
 #about-text {
- flex: 5;
+ 
 }
 
 #form-container {
@@ -465,7 +466,7 @@ h6 {
   bottom: 10%;
   left: 64%;
   padding: 10px 30px;
-  border: 1px solid white;
+  border: 0.5px solid white;
   background-color: #867871;
   color: white;
   cursor: pointer;
@@ -626,6 +627,59 @@ h6 {
    padding: 20px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .image-container{
+   
+   padding: 20px;
+   padding-top: 50px;
+   height: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-text{
+    padding:40px;
+   
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .pointer{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .work1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .submit-button{
+    display: flex;
+    position: relative;
+    bottom: 10%;
+    left: 20%;
+    padding: 10px 100px;
+    border: 0.5px solid white;
+    background-color: #867871;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .submit-button:hover {
+    background-color: #100f0f;
+    transform-origin: right;
+    transition: transform 0.25s ease-out;
+  }
+}
+
 
 
 
