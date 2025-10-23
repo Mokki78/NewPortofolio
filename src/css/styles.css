@@ -157,6 +157,15 @@ section {
   text-decoration: none;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+ 
+}
 .text-box {
   padding-bottom: 100px;
   border-bottom: 1px solid  #867871;
@@ -312,17 +321,15 @@ h6 {
 .proto-link {
   display: inline-block;
   position: relative;
-  color: #867871;
+  color: white;
   justify-content: center;
   align-items: center;
-  color: #867871;
   font-size: 16px;  
   padding-top: 50px;
 }
 
 .proto-link::after {
   content: "";
-
   text-decoration: none; 
   width: 100%;
   transform: scaleX(0);
@@ -354,7 +361,6 @@ h6 {
   transform: scaleX(1);
   transform-origin: left;
 }
-
 .about-container {
   display: flex;
   flex-direction: column ;
@@ -362,24 +368,31 @@ h6 {
   justify-content:center;
   width: 100%;
   height: 100vh;
+  box-sizing: border-box; 
+  padding: 0 5%;
+}
+
+.image-container,
+.text-container {
+ flex: 2;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .image-container {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  max-width: 100%;
-  padding-left: 200px;
-  height: 500px;
+  max-width: 100;
+  height: 100%;
+ padding-left: 200px;
+  
 }
+
 
 .about-img {
   border: 1px solid white; 
-
-}
-
-#about-text {
  
+  
+
 }
 
 #form-container {
