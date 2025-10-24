@@ -213,6 +213,7 @@ section {
 
 }
 
+
 .logo {
   height: 100px;
   padding-left: 80px;
@@ -282,7 +283,7 @@ h3 {
   padding-left: 250px;
   padding-right: 250px;
   font-size: 24px;
-  border-bottom: 1px solid #867871;
+ 
   padding-bottom: 100px;
 }
 
@@ -357,10 +358,12 @@ h6 {
   transform-origin: right;
   transition: transform 0.25s ease-out;
 }
+
 .proto-link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
+
 .about-container {
   display: flex;
   flex-direction: column ;
@@ -383,16 +386,11 @@ h6 {
 .image-container {
   max-width: 100;
   height: 100%;
- padding-left: 200px;
-  
+ padding-left: 200px; 
 }
-
 
 .about-img {
   border: 1px solid white; 
- 
-  
-
 }
 
 #form-container {
@@ -497,10 +495,6 @@ h6 {
   margin: 0 auto;
 }
 
-.content-container {
-   border: 1px solid #867871;
-}
-
 
 #section1 {
   border-bottom: 1px solid #867871;
@@ -522,6 +516,7 @@ h6 {
 #section5 {
   border-bottom: 1px solid #867871;
 }
+
 
 @media only screen and (max-width: 800px) {
   .about-text {
