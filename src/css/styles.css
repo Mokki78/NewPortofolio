@@ -1,5 +1,5 @@
-
-body, html {
+body,
+html {
   margin: 0;
   background-color: #100f0f;
   font-family: "poppins", sans-serif;
@@ -9,7 +9,6 @@ body, html {
 
 section {
   min-height: 100%;
- 
 }
 
 .mainList {
@@ -30,7 +29,7 @@ section {
 }
 
 .mainNav {
-  border-bottom: 1px solid #867871;  
+  border-bottom: 1px solid #867871;
   position: relative; /* Sørger for at .mainNav får en stacking context */
   z-index: 20;
 }
@@ -63,13 +62,13 @@ section {
   display: inline-block;
   position: relative;
   color: #867871;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .hover-underline-animation::after {
   content: "";
   position: absolute;
-  width: 100%; 
+  width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: -2px;
@@ -144,7 +143,7 @@ section {
   padding: 20%;
   margin: 50px;
   height: 50px;
-  gap:20px;
+  gap: 20px;
   text-align: center;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -189,30 +188,26 @@ section {
   border-right: 5px solid #867871;
   transform: rotate(45deg);
   margin: -10px;
-  animation: animate 2s infinite; 
+  animation: animate 2s infinite;
 }
-
 
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: rotate(45deg)
-    translate(-20px, -20px);
+    transform: rotate(45deg) translate(-20px, -20px);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: rotate(45deg) translate(20px, 20px)
+    transform: rotate(45deg) translate(20px, 20px);
   }
 }
 
 .border {
-  border-bottom: 1px solid  #867871;
-
+  border-bottom: 1px solid #867871;
 }
-
 
 .logo {
   height: 100px;
@@ -232,7 +227,6 @@ section {
   align-items: center;
   margin: 0 auto;
 }
-
 
 p {
   display: flex;
@@ -310,34 +304,35 @@ h6 {
   text-align: center;
 }
 
-label { 
-  font-size: .8em; 
+label {
+  font-size: 0.8em;
   line-height: 4em;
   text-transform: uppercase;
   color: #fff;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   opacity: 0;
   cursor: pointer;
 }
 
-.inner:before, .inner:after {
+.inner:before,
+.inner:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 1px;
   width: inherit;
-  background: #FFC107;
+  background: #ffc107;
   left: 0;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .inner:before {
-  top: 50%; 
-  transform: rotate(45deg);  
+  top: 50%;
+  transform: rotate(45deg);
 }
 
-.inner:after {  
+.inner:after {
   bottom: 50%;
-  transform: rotate(-45deg);  
+  transform: rotate(-45deg);
 }
 
 .outer:hover label {
@@ -369,13 +364,13 @@ label {
   margin: 0 auto;
   justify-content: center;
   padding-top: 50px;
-  cursor: pointer;  
-  font-size: 20px; 
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .icon-arrow:hover {
   color: white;
-  font-size: 20px;  
+  font-size: 20px;
 }
 
 .work1 {
@@ -384,22 +379,22 @@ label {
 }
 
 .work2 {
-  padding-top:  100px;
+  padding-top: 100px;
   width: 50%;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   padding: 0 auto;
 }
 
 .about-container {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: 0 5%;
 }
 
@@ -409,13 +404,13 @@ label {
   color: white;
   justify-content: center;
   align-items: center;
-  font-size: 16px;  
+  font-size: 16px;
   padding-top: 20px;
 }
 
 .proto-link::after {
   content: "";
-  text-decoration: none; 
+  text-decoration: none;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
@@ -436,13 +431,13 @@ label {
   color: white;
   justify-content: center;
   align-items: center;
-  font-size: 16px;  
+  font-size: 16px;
   padding-top: 50px;
 }
 
 .proto-link::after {
   content: "";
-  text-decoration: none; 
+  text-decoration: none;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
@@ -460,7 +455,7 @@ label {
 .proto-link::after {
   content: "";
   position: absolute;
-  width: 100%; 
+  width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: -2px;
@@ -476,7 +471,7 @@ label {
 }
 
 .about-img {
-  border: 1px solid white; 
+  border: 1px solid white;
   margin-left: 20%;
 }
 
@@ -594,156 +589,147 @@ label {
   padding-bottom: 50px;
 }
 
-
 @media only screen and (max-width: 800px) {
   .about-text {
-   padding-left: 200px;
-   padding-right: 100px;
+    padding-left: 200px;
+    padding-right: 100px;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .self-portrait img{
-   display: none;
+  .self-portrait img {
+    display: none;
   }
 }
-
 
 @media only screen and (min-width: 800px) {
-  .hamburger-icon{
-   display: none;
-   }
-}
-
-@media only screen and (max-width: 800px) {
-  .hamburger-icon{
-   position: absolute;
-   top: 5px;
-   right: 5px;
-   }
-}
-
-
-@media only screen and (max-width: 800px) {
-  .logo{
-   height: 60px;
+  .hamburger-icon {
+    display: none;
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .hamburger-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
 
-@media only screen and (max-width: 600px) {
-  .mainList{
-   display: none;
+@media only screen and (max-width: 800px) {
+  .logo {
+    height: 60px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .hero-image{
-   display: none;
+  .mainList {
+    display: none;
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .hero-image {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 800px) {
-  h1{
+  h1 {
     font-size: 30px;
     padding-top: 60px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  h2{
+  h2 {
     font-size: 25px;
     padding: 30px;
-}
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  h3{
+  h3 {
     font-size: 20px;
     padding: 30px;
     padding-top: 10px;
-}
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  h6{
+  h6 {
     font-size: 19px;
     padding: 30px;
-}
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  p{
+  p {
     font-size: 16px;
     padding: 20px;
-}
-}
-
-@media only screen and (min-width: 800px) {
-  .hero-image-mobile{
-   display: none;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .about-container{
-   flex-direction: row;
-   padding: 20px;
+  .hero-image-mobile {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .image-container{
-   flex-direction: row;
+  .about-container {
+    flex-direction: row;
+    padding: 20px;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  .about-text{
-   padding: 20px;
+  .image-container {
+    flex-direction: row;
   }
 }
 
-
-@media only screen and (max-width: 800px) {
-  #form-container{
-   
-   padding: 20px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .image-container{
-   
-   padding: 20px;
-   padding-top: 50px;
-   height: 400px;
+@media only screen and (min-width: 800px) {
+  .about-text {
+    padding: 20px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .about-text{
-    padding:40px;
-   
+  #form-container {
+    padding: 20px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .pointer{
+  .image-container {
+    padding: 20px;
+    padding-top: 50px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-text {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .pointer {
     display: none;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .work1{
+  .work1 {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .submit-button{
+  .submit-button {
     display: flex;
     position: relative;
     bottom: 10%;
@@ -765,41 +751,35 @@ label {
   }
 }
 
-
-
-
-
- @media only screen and (max-width: 800px) {
-  .image-container{
-   
-   padding: 20px;
-   padding-top: 50px;
-   height: 400px;
+@media only screen and (max-width: 800px) {
+  .image-container {
+    padding: 20px;
+    padding-top: 50px;
+    height: 400px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .about-text{
-    padding:40px;
-   
+  .about-text {
+    padding: 40px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .pointer{
+  .pointer {
     display: none;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .work1{
+  .work1 {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .submit-button{
+  .submit-button {
     display: flex;
     position: relative;
     bottom: 10%;
@@ -820,8 +800,3 @@ label {
     transition: transform 0.25s ease-out;
   }
 }
-
-
-
-
-
