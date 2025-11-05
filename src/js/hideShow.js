@@ -1,19 +1,33 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".icon-arrow");
+    const openButtons = document.querySelectorAll(".icon-arrow");
+    const closeButtons = document.querySelectorAll("#close-container");
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function () {
+    openButtons.forEach(button => {
+        button.addEventListener("click", function() {
             const targetId = this.getAttribute("data-target");
+            const targetElement = document.querySelector(`.open-close[data-id="${targetId}"]`)
 
-            const targetElement = document.querySelector(`.open-close[data-id="${targetId}"]`);
 
             if(targetElement) {
-                if(targetElement.style.display === "block") {
-                    targetElement.style.display = "none";
-                }else {
-                    targetElement.style.display = "block";
+                targetElement.style.display = "block";
+                this.style.display = "none";
+
                 }
-            }
-        });
-    });
-});
+            });
+        })
+
+        closeButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const targetId = this.getAttribute("data-target");
+                const targetElement = document.querySelector(`.open-close[data-id="${targetId}"]`)
+                const openButton = document.querySelector(`.icon-arrow[data-target="${targetId}"]`);
+
+                if(targetElement) {
+                    targetElement.style.display = "none";
+                    openButton.style.display ="block";
+                }
+
+            }) 
+        })
+    })
+
