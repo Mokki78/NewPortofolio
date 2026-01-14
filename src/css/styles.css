@@ -103,7 +103,7 @@ section {
 .bar3 {
   background-color: white;
   width: 25px;
-  min-height: 3px;
+  min-height: 1px;
   margin: 5px 0;
 }
 
@@ -321,9 +321,9 @@ label {
   font-size: 0.8em;
   line-height: 2.5em;
   text-transform: uppercase;
-  color: black;
+  color: white;
   transition: all 0.3s ease-in;
-  opacity: 0;
+  
   cursor: pointer;
 }
 
@@ -389,27 +389,14 @@ label {
 .work1 {
   padding-top: 100px;
   width: 100%;
-}
-
-.work2 {
-  padding-top: 100px;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 auto;
-  
+  transition-duration: 3s ease-in;  
 }
 
 .about-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 0 5%;
+  gap:40px;
+  padding: clamp(20px, 5vw, 60px);
   transition-duration: 0.4s;
 }
 
@@ -496,23 +483,22 @@ label {
   border: 1px solid white;
 }
 
-#form-container i {
-  color: green;
+#form-label {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  opacity: 1;
+  color: white;
 }
 
 #contact-name,
 #contact-email {
   height: 30px;
+  color: black;
 }
 
 #contact-message {
   height: 100px;
-}
-
-.label {
-  color: white;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  color: black;
 }
 
 #email-error,
@@ -521,7 +507,7 @@ label {
   color: red;
 }
 
-.form-container i {
+#form-container i {
   color: green;
   display: flex;
   position: relative;
@@ -532,28 +518,17 @@ label {
   border: 1px solid white;
   padding: 50px;
 }
-
-.contact-info-box1 {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.contact-info-box2 {
-  padding-top: 20px;
-  gap: 20px;
-}
-
-.some {
-  gap: 10px;
-  margin: 0 auto;
-  color: #867871;
-}
+ .some{
+   display: flex;
+   padding-top: 50px; 
+ }
 
 #some-icon1,
 #some-icon2,
 #some-icon3 {
   padding: 10px;
   color: #867871;
+  margin: 0 auto;
 }
 
 #some-icon1:hover,
@@ -561,6 +536,7 @@ label {
 #some-icon3:hover {
   padding: 10px;
   color: white;
+  margin: 0 auto;
 }
 
 .submit-button {
@@ -588,6 +564,47 @@ label {
   padding: 10px;
 }
 
+.about-container {
+  display: flex;
+  flex-direction: column; 
+  gap:10px;
+}
+
+.image-container img {
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto;
+  height: auto;
+  
+
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+@media (min-width: 800px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image-container,
+  .about-text {
+    flex: 1;  
+  
+  }
+
+  .image-container img {
+    flex: 1;
+    max-width: auto;
+    margin-left: 0px;
+    padding: 0px;
+  }
+}
+
+
+
 #section3 {
   border-bottom: 1px solid #867871;
   border-top: 1px solid #867871;
@@ -598,13 +615,6 @@ label {
   border-bottom: 1px solid #867871;
   padding-top: 100px;
   padding-bottom: 50px;
-}
-
-@media only screen and (max-width: 800px) {
-  .about-text {
-    padding-left: 200px;
-    padding-right: 100px;
-  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -687,25 +697,6 @@ label {
   }
 }
 
-@media only screen and (min-width: 800px) {
-  .about-container {
-    flex-direction: row;
-    padding: 20px;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .image-container {
-    flex-direction: row;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .about-text {
-    padding: 20px;
-  }
-}
-
 @media only screen and (max-width: 800px) {
   #form-container {
     padding: 20px;
@@ -713,26 +704,6 @@ label {
 }
 
 @media only screen and (max-width: 800px) {
-  .image-container {
-    padding: 20px;
-    padding-top: 50px;
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .about-text {
-    padding: 40px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .pointer {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 800px) {
   .work1 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -763,51 +734,28 @@ label {
 }
 
 @media only screen and (max-width: 800px) {
-  .image-container {
-    padding: 20px;
-    padding-top: 50px;
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .about-text {
-    padding: 40px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
   .pointer {
     display: none;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .work1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .submit-button {
-    display: flex;
+  .goButton {
     position: relative;
-    bottom: 10%;
-    left: 20%;
-    padding: 10px 100px;
-    border: 0.5px solid white;
-    background-color: #867871;
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
+    bottom: 350px;
+    right: 1px;
+    
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .submit-button:hover {
-    background-color: #100f0f;
-    transform-origin: right;
-    transition: transform 0.25s ease-out;
+  .some {
+    display: flex;
+    margin: 0 auto;
+    gap: 1px;
+    
+    
   }
 }
+
+
