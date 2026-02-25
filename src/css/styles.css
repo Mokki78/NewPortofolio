@@ -102,6 +102,12 @@ section {
   min-height: 100%;
 }
 
+h2 {
+  font-family: "Ms Madi", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .mainList {
   color: white;
   display: flex;
@@ -344,7 +350,7 @@ a {
 h1 {
   color: #867871;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0 auto;
   padding: 50px;
 }
