@@ -104,7 +104,22 @@ section {
 
 h2 {
   font-family: "Ms Madi", cursive;
-  font-weight: 400;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 250px;
+  padding-right: 250px;
+  font-size: 50px;
+  padding-top: 100px;
+}
+
+h6 {
+  font-family: "Ms Madi", cursive;
+  font-size: 40px;
+  color: white;
   font-style: normal;
 }
 
@@ -375,11 +390,6 @@ h3 {
   padding-right: 250px;
   font-size: 24px;
   padding-bottom: 100px;
-}
-
-h6 {
-  color: white;
-  font-size: 25px;
 }
 
 .content-section {
@@ -723,7 +733,7 @@ button.loading {
 .image-container img {
   display: block;
   max-width: 400px;
- height: auto;
+  height: auto;
 }
 
 @media (min-width: 800px) {
@@ -896,4 +906,3 @@ button.loading {
     gap: 1px;
   }
 }
-
