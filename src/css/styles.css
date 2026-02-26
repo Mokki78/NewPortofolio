@@ -102,6 +102,42 @@ section {
   min-height: 100%;
 }
 
+.content-section {
+  position: relative;
+  background: lightgrey;
+  padding: 2px;
+  margin: 20px;
+  color: black;
+}
+
+#section3 {
+  border-bottom: 1px solid #867871;
+  border-top: 1px solid #867871;
+  padding-top: 100px;
+}
+
+#section4 {
+  border-bottom: 1px solid #867871;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.border {
+  border-bottom: 1px solid #867871;
+}
+
+
+/* Text & headers           */
+
+h1 {
+  color: #867871;
+  font-size: 60px;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+
 h2 {
   font-family: "Ms Madi", cursive;
   font-weight: 500;
@@ -116,12 +152,27 @@ h2 {
   padding-top: 100px;
 }
 
+h3 {
+  color: white;
+  font-family: Poppins;
+  font-weight: 200;
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+  font-size: 24px;
+  padding-bottom: 100px;
+}
+
 h6 {
   font-family: "Ms Madi", cursive;
   font-size: 40px;
   color: white;
   font-style: normal;
 }
+
+/* ---------------------------------- */
+
+/* Desktop main nav */
 
 .mainList {
   color: white;
@@ -145,6 +196,10 @@ h6 {
   position: relative; /* Sørger for at .mainNav får en stacking context */
   z-index: 20;
 }
+
+/* ---------------------------------------- */
+
+/* Hover underline animation on nav and buttons */
 
 #hover-underline-animation {
   display: inline-block;
@@ -194,6 +249,10 @@ h6 {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+/* ------------------------------------ */
+
+/* Mobile nav  */
 
 .hamburger-icon {
   display: inline-block;
@@ -268,6 +327,10 @@ h6 {
   text-decoration: none;
 }
 
+/* --------------------------------- */
+
+/* Mobile               */
+
 .links {
   display: flex;
   flex-direction: row;
@@ -317,10 +380,6 @@ h6 {
   }
 }
 
-.border {
-  border-bottom: 1px solid #867871;
-}
-
 .logo {
   height: 100px;
   padding-left: 80px;
@@ -342,11 +401,10 @@ h6 {
 
 p {
   display: flex;
+  max-width: 50%;
   margin: 0 auto;
   color: white;
   font-weight: 200;
-  padding-left: 400px;
-  padding-right: 400px;
 }
 
 a {
@@ -362,43 +420,6 @@ a {
   display: flex;
 }
 
-h1 {
-  color: #867871;
-  font-size: 60px;
-  font-weight: 500;
-  margin: 0 auto;
-  padding: 50px;
-}
-
-h2 {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 250px;
-  padding-right: 250px;
-  font-size: 40px;
-  padding-top: 100px;
-}
-
-h3 {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 250px;
-  padding-right: 250px;
-  font-size: 24px;
-  padding-bottom: 100px;
-}
-
-.content-section {
-  position: relative;
-  background: lightgrey;
-  padding: 2px;
-  margin: 20px;
-  color: black;
-}
 
 #close-container {
   position: absolute;
@@ -472,6 +493,8 @@ label {
   bottom: 0;
 }
 
+/* Some icons         */
+
 .icon-container {
   display: flex;
   justify-content: center;
@@ -493,11 +516,15 @@ label {
   font-size: 20px;
 }
 
+/* ----------------------------- */
+
 .work1 {
   padding-top: 100px;
   width: 100%;
   transition-duration: 3s ease-in;
 }
+
+/* Animated arrow hero image desktop */
 
 .proto-link {
   display: inline-block;
@@ -544,6 +571,10 @@ label {
   transform-origin: left;
 }
 
+/* --------------------------------- */
+
+/* Back to top button  */
+
 .goBtnContainer {
   position: absolute;
   right: 50px;
@@ -565,6 +596,29 @@ label {
 .goButton:hover {
   color: #867871;
 }
+
+/* ------------------------------ /*
+
+/* About               */
+
+.about-container {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.about-img {
+  max-width: 30%;
+  flex-wrap: 1;
+}
+
+.about-text {
+  flex-wrap: 1;
+  max-width: 30%;
+  padding: 30%;
+}
+
+/* Contact form       */
 
 #form-container {
   box-sizing: border-box;
@@ -673,6 +727,30 @@ button.loading {
   opacity: 0.7;
   pointer-events: none;
 }
+
+#submit-button {
+  display: flex;
+  position: relative;
+  bottom: 10%;
+  left: 70%;
+  padding: 10px 30px;
+  border: 0.5px solid white;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#submit-button:hover {
+  background-color: #867871;
+  transform-origin: right;
+  transition: transform 0.25s ease-out;
+}
+
+/* --------------------------- */
+
+
+/* Footer                 */
 .some {
   display: flex;
   padding-top: 50px;
@@ -682,7 +760,7 @@ button.loading {
 #some-icon2,
 #some-icon3 {
   padding: 10px;
-  color: #867871;
+  color: white;
   margin: 0 auto;
 }
 
@@ -690,27 +768,8 @@ button.loading {
 #some-icon2:hover,
 #some-icon3:hover {
   padding: 10px;
-  color: white;
-  margin: 0 auto;
-}
-
-#submit-button {
-  display: flex;
-  position: relative;
-  bottom: 10%;
-  left: 70%;
-  padding: 10px 30px;
-  border: 0.5px solid white;
-  background-color: #867871;
-  color: white;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-#submit-button:hover {
-  background-color: #100f0f;
-  transform-origin: right;
-  transition: transform 0.25s ease-out;
+  color: #867871;
+   margin: 0 auto;
 }
 
 .copyright {
@@ -719,53 +778,22 @@ button.loading {
   padding: 10px;
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-  padding: 120px 8vw 32px;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-}
-
-.image-container img {
-  display: block;
-  max-width: 400px;
-  height: auto;
-}
-
 @media (min-width: 800px) {
   .about-container {
     flex-direction: row;
     align-items: center;
   }
 
-  .image-container,
+  .about-img {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+  }
+
   .about-text {
-    flex: 1;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+    padding: 20px;
   }
-
-  .image-container img {
-    flex: 1;
-    max-width: auto;
-    margin-left: 0px;
-    margin-top: 5px;
-    gap: 30px;
-  }
-}
-
-#section3 {
-  border-bottom: 1px solid #867871;
-  border-top: 1px solid #867871;
-  padding-top: 100px;
-}
-
-#section4 {
-  border-bottom: 1px solid #867871;
-  padding-top: 100px;
-  padding-bottom: 50px;
 }
 
 @media only screen and (min-width: 800px) {
